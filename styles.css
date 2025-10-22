@@ -40,6 +40,17 @@ h1,h2,h3,h4{ margin:0 0 8px; }
 }
 .btn--small{ padding:8px 12px; border-radius:10px; }
 
+.btn1{
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  color:#0b0e1e; padding:12px 18px; border-radius:12px; font-weight:800; display: inline-block;
+}
+.btn1--ghost{
+  background:transparent; border:1px solid var(--border); color:var(--text);
+}
+.btn1--small{ padding:8px 12px; border-radius:10px; }
+
+
+
 .chip{ background:#1b1f45; color:#c6cbf3; border:1px solid #2a2e57; border-radius:999px; padding:6px 10px; }
 
 /* Header */
@@ -101,7 +112,7 @@ h1,h2,h3,h4{ margin:0 0 8px; }
 
 /* Empuja el botón hacia abajo y que ocupe todo el ancho si quieres */
 .pricing .card .btn{
-  margin-top: 18px;        /* CLAVE: se pega al fondo */
+  margin-top: 32px;        /* CLAVE: se pega al fondo */
   width: 100%;             /* opcional: botón ancho */
   align-self: center;
 }
