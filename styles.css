@@ -88,7 +88,7 @@ h1,h2,h3,h4{ margin:0 0 8px; }
 /* ==== Botones pegados abajo en las tarjetas de precios ==== */
 
 /* Asegura que las tarjetas dentro de .pricing se estiran a igual altura */
-.pricing { align-items: stretch; }
+.pricing { align-items: start; }
 
 /* Convierte cada tarjeta de precios en columna flex */
 .pricing .card{
