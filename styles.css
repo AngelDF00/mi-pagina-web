@@ -85,6 +85,30 @@ h1,h2,h3,h4{ margin:0 0 8px; }
 
 .cards-cta{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
 
+/* ==== Botones pegados abajo en las tarjetas de precios ==== */
+
+/* Asegura que las tarjetas dentro de .pricing se estiran a igual altura */
+.pricing { align-items: stretch; }
+
+/* Convierte cada tarjeta de precios en columna flex */
+.pricing .card{
+  display: flex;
+  flex-direction: column;
+}
+
+/* El listado no deja huecos extra al final */
+.pricing .card .plain{ margin-bottom: 0; }
+
+/* Empuja el botón hacia abajo y que ocupe todo el ancho si quieres */
+.pricing .card .btn{
+  margin-top: auto;        /* CLAVE: se pega al fondo */
+  width: 100%;             /* opcional: botón ancho */
+}
+
+/* Un poco de respiración en el borde inferior de la tarjeta */
+.pricing .card{ padding-bottom: 18px; }
+
+
 /* Accordion */
 .accordion details{
   background:#14183a; border:1px solid #232758; border-radius:12px; padding:12px 14px; margin:10px 0;
