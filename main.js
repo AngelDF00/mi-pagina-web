@@ -1,6 +1,15 @@
 // Año footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// ======== Ajuste dinámico de altura del header ========
+function setHeaderHeightVar() {
+  const h = document.querySelector('.site-header')?.offsetHeight || 64;
+  document.documentElement.style.setProperty('--header-h', `${h}px`);
+}
+setHeaderHeightVar();
+window.addEventListener('resize', setHeaderHeightVar);
+// =======================================================
+
 // Menú móvil
 const burger = document.getElementById('hamburger');
 const menu = document.getElementById('menu');
