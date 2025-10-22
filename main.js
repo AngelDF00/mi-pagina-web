@@ -1,5 +1,12 @@
 // Año footer
 document.getElementById('year').textContent = new Date().getFullYear();
+function setHeaderHeightVar(){
+  const h = document.querySelector('.site-header')?.offsetHeight || 64;
+  document.documentElement.style.setProperty('--header-h', `${h}px`);
+}
+setHeaderHeightVar();
+window.addEventListener('resize', setHeaderHeightVar);
+
 
 // Menú móvil
 const burger = document.getElementById('hamburger');
