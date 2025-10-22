@@ -13,11 +13,11 @@
 /* ======== Ajuste para que los anclajes no queden tapados ======== */
 html {
   scroll-behavior: smooth; /* ya lo tienes, pero asegúrate */
-  scroll-padding-top: calc(var(--header-h, 64px) + 12px);
+  scroll-padding-top: calc(var(--header-h, 64px) - 8px);
 }
 
 section[id] {
-  scroll-margin-top: calc(var(--header-h, 64px) + 12px);
+  scroll-margin-top: calc(var(--header-h, 64px) - 8px);
 }
 /* =============================================================== */
 
