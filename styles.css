@@ -101,8 +101,9 @@ h1,h2,h3,h4{ margin:0 0 8px; }
 
 /* Empuja el botón hacia abajo y que ocupe todo el ancho si quieres */
 .pricing .card .btn{
-  margin-top: auto;        /* CLAVE: se pega al fondo */
+  margin-top: 12px;        /* CLAVE: se pega al fondo */
   width: 100%;             /* opcional: botón ancho */
+  align-self: center;
 }
 
 /* Un poco de respiración en el borde inferior de la tarjeta */
