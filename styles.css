@@ -10,6 +10,18 @@
   --ok:#7de38b;
 }
 
+/* ======== Ajuste para que los anclajes no queden tapados ======== */
+html {
+  scroll-behavior: smooth; /* ya lo tienes, pero asegúrate */
+  scroll-padding-top: calc(var(--header-h, 64px) + 12px);
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--header-h, 64px) + 12px);
+}
+/* =============================================================== */
+
+
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; scroll-behavior:smooth; }
 body{ font-family:Inter,system-ui,Segoe UI,Roboto,Arial; color:var(--text); background:radial-gradient(1400px 900px at 80% -10%, #1b1f45, transparent), var(--bg); }
